@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="estilos/css/bootstrap.css">
+    <link rel="stylesheet" href="estilos/css/estilos.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Cosas por hacer.</h1>
+    </div>
+    <div class="form">
+            <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                <input type="text" id="add-todo" placeholder="Añadir tarea...">
+                <input type="submit" value="Añadir" class="btn btn-primary">
+            </form>
+            <p>Tienes:</p>
+            <p id="counter"></p>
+            <table>
+                <tr class="to-do">
+                   <th><h3>Tareas:</h3></th> 
+                </tr>
+                <tbody id="tasks">
+                </tbody>
+            </table>
+    </div>
+     <div id="edit-box" role="aria-hidden">
+         <form action="javascript:void(0);" method="post" id="save-edit">
+         <input type="text" id="edit-todo">
+         <input type="submit" value="Guardar" class="btn btn-success"/>
+           <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+         </form>
+     </div>
+     <script src="crud.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body{
+    width:715px;
+    margin:0 auto;
+    background-image: url(./imagenes/def.jpg);
+}
+
+.title{
+    text-align:center;
+    margin-top: 25px;
+}
+
+.form{
+    margin: auto;
+    max-width: 80%;
+    text-align: center; 
+ }
+
+ input[type='submit'], button, [aria-lable]{
+     cursor:pointer;
+ }
+ #edit-box{
+     display: none;
+     max-width: 80%;
+     margin: auto;
+     margin-top: 10px;
+    }
+ td{
+        background-color: rgb(186, 220, 250);
+        padding-right: 10px;
+        text-align: left;
+    }
+
+ .to-do{
+     background: transparent !important ;
+ }
